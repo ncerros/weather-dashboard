@@ -1,0 +1,38 @@
+body {
+    background-color: #c1dcf9;
+    
+}
+
+h1, 
+h2,
+h3 {
+    color: rgb(45, 133, 133);
+}
+.btn {
+    color: rgba(61, 110, 233, 0.934);;
+}
+
+.past-search-term {
+    color: rgba(61, 110, 233, 0.934);
+}
+
+.uv-index-number {
+    background-color: crimson;
+}
+.col-2 {
+    align-items: flex-start;
+    margin-right: 15px;
+}
+.uv-index-number {
+    border-radius: 5px;
+}
+
+.btn .past-search-term {
+    margin-right: 15px;
+    padding-right: 5px;
+
+}
+#past-searches {
+    padding-right: 7px;
+}
+
