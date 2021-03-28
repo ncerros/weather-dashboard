@@ -7,7 +7,7 @@ $(document).ready(function () {
     var theCurrentWeatherContainer = $("#current-weather");
     var fiveDayForecastContainer = $("#five-day-forecast");
     var searchValueInput = $("#search-value");
-    var apikey = "95afb9e6d452de7c7a0255ca40cf049b"
+    var apikey = "95afb9e6d452de7c7a0255ca40cf049b";
     var baseurl = "https://api.openweathermap.org/data/2.5/weather?";
     var baseUrl2 = "https://api.openweathermap.org/data/2.5/forecast?";
     var uvIndexBaseUrl = "https://api.openweathermap.org/data/2.5/onecall?";
@@ -41,7 +41,7 @@ $(document).ready(function () {
     });
     function currentCityWeather(city) {
         theCurrentWeatherContainer.html("");
-        var completeUrl = baseurl + "q=" + city + "&appid=" + apikey;
+        var completeUrl = baseurl + "q=" + city + "&units=imperial&appid=" + apikey;
         console.log(completeUrl);
 
         //The user will have a result about all the condition of the weather in the city
@@ -64,7 +64,7 @@ $(document).ready(function () {
                 var windDiv = $('<div class="wind-name">');
                 cityNameDiv.text(cityName);
                 weatherImg.attr("src", iconUrl);
-                tempDiv.text("Temperature: " + temp);
+                tempDiv.text("Temperature: " + temp + "°F");
                 humidityDiv.text("Humidity: " + humidity + "%");
                 windDiv.text("Wind Speed: " + wind.speed + "MPH");
                 theCurrentWeatherContainer.append(cityNameDiv);

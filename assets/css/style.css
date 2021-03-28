@@ -1,6 +1,9 @@
 body {
-    background-color: #c1dcf9;
+    background-color: #9af7fd;
     
+}
+#search-value {
+    border-radius: 20px;
 }
 
 h1, 
@@ -9,7 +12,8 @@ h3 {
     color: rgb(45, 133, 133);
 }
 .btn {
-    color: rgba(61, 110, 233, 0.934);;
+    color: rgba(61, 110, 233, 0.934);
+    border-radius: 20px;
 }
 
 .past-search-term {
@@ -34,5 +38,20 @@ h3 {
 }
 #past-searches {
     padding-right: 7px;
+    
 }
+.current-weather {
+    background: linear-gradient(rgb(47,150,163,0.65), rgb(48,62,143,0.65));
+    padding-left: 10px;
+    border-radius: 15px;
+    
+}
+#five-day-forecast.five-day-forecast.row {
+    background: linear-gradient(rgb(47,150,163,0.65), rgb(48,62,143,0.65));
+    border-radius: 10px;}
+    bo
+
+
+
+
 
